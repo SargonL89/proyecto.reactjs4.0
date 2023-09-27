@@ -4,7 +4,7 @@ import styles from './header.module.css'
 const Header = () => {
     return (
         <header className={styles.contenedor}>
-            <h3>Prototype EC4.0</h3>
+            <p>Prototype EC4.0</p>
             <Navbar />
         </header>
     )

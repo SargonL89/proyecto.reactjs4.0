@@ -1,3 +1,4 @@
-.contenedor {
+.contenedor:hover {
+    transition: 1s  ease;
     background-color: rgb(84, 0, 162);
 }

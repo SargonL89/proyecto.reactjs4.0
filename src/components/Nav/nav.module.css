@@ -1,4 +1,10 @@
 .link {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
 }
