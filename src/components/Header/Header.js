@@ -6,8 +6,8 @@ const Header = () => {
         <header className={styles.contenedor}>
             <p>Prototype EC4.0</p>
             <nav className={styles.nav}>
-                <a className={styles.link} href="http://google.com">Productos</a>
                 <a className={styles.link} href="http://google.com"><BsCart3 /></a>
+                <a className={styles.link} href="http://google.com">Productos</a>
                 <a className={styles.link} href="http://google.com">Nosotros</a>
                 <a className={styles.link} href="http://google.com">Contacto</a>
 
