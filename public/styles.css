@@ -7,9 +7,5 @@ body {
     font-family: 'Exo', Arial, Helvetica, sans-serif;
 }
 
-.brand {
-    color: rgb(37, 62, 81);
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
+
+

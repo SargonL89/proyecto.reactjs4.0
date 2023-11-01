@@ -1,4 +1,30 @@
-.contenedor:hover {
-    transition: 1s  ease;
-    background-color: rgb(84, 0, 162);
+.contenedor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand {
+    color: rgb(37, 62, 81);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.aFoot {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.icons {
+    width: 100%;
+    height: 100%;
 }
