@@ -1,0 +1,42 @@
+[33mcommit ed2330845a23d1851ec2d71c5b2dbc82ff02ddfe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 8731931 e9ed4e9
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Wed Nov 1 08:46:41 2023 -0300
+
+    already pull
+
+[33mcommit 8731931cb22d2dbcc5d86561313e536a643e0275[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Wed Nov 1 08:37:38 2023 -0300
+
+    counter with styles
+
+[33mcommit e9ed4e99126d5e61f18106a3108c907a4d813d8a[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Sun Oct 29 04:37:27 2023 -0300
+
+    Counter was added
+
+[33mcommit 7d11ed5c4881c9162db151ac9629d6533e63a287[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Fri Oct 6 13:47:58 2023 -0300
+
+    Icons were added
+
+[33mcommit eea1f611c9d9f84d05164513dda1158a5f5b2f0c[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Tue Sep 26 23:46:13 2023 -0300
+
+    styles in navbar
+
+[33mcommit dee860b02e7eb0bba14fa41bf4d45a5cfc943cff[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Mon Sep 25 22:19:28 2023 -0300
+
+    components with styles
+
+[33mcommit dbfbdfb0373c6853c77de0d8eddfc8b152f4dde4[m
+Author: Leandro Magnotti <leandro.magnotti@gmail.com>
+Date:   Fri Feb 17 22:43:28 2023 -0300
+
+    Initialize project using Create React App

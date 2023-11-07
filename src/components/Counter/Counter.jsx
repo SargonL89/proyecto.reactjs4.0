@@ -3,7 +3,7 @@ import styles from './counter.module.css'
 
 const Counter = () => {
     
-    const stock = 50;
+    const stock = 10;
     const [counter, setCounter] = useState(0);
     const [products, setProducts] = useState(0);
 
@@ -25,7 +25,7 @@ const Counter = () => {
             <button className={styles.btnCount} disabled={counter >= stock} onClick={sumar}>+</button>
         </div>
         <div className={styles.addCarrito}>
-            <button className={styles.btnCart}disabled={counter <= 0} onClick={carrito}>Agregar al carrito</button>
+            <button className={styles.btnCart}disabled={counter <= 0 || counter>stock} onClick={carrito}>Agregar al carrito</button>
             <div>Productos en carrito: {products}</div>
         </div>
     </div>

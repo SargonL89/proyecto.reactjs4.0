@@ -1,0 +1,17 @@
+.divItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ulItem {
+    margin: 0%;
+    padding: 0%;
+}
+
+.imgItem {
+    margin: 2%;
+    height: 100%;
+    width: 50%;
+}
