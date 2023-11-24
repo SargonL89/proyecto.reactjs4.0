@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import styles from './main.module.css';
 import ItemList from '../ItemList/ItemList';
+import ItemDetailContainer from '../ItemDetailConteiner/ItemDetailContainer';
+import { Routes, Route } from 'react-router-dom'
 
 const Main = () => {
   const [items, setItems] = useState([]);
@@ -23,9 +25,10 @@ const Main = () => {
 
   return (
     <main className={styles.contenedor}>
-        <div>
-          <ItemList items={items}/>
-        </div>
+      <Routes>
+        <Route path='/' element={<ItemList items={items}/>} />
+        <Route path='/detail/:idProd' element={<ItemDetailContainer items={items}/>} />
+      </Routes>
     </main>
   )
 }
