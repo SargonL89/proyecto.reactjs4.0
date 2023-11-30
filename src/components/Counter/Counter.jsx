@@ -2,20 +2,16 @@ import React, {useState} from 'react';
 import styles from './counter.module.css'
 import { Link } from 'react-router-dom' 
 
-const Counter = () => {
+const Counter = ({carrito}) => {
     
     const stock = 10;
     const [counter, setCounter] = useState(0);
-    const [products, setProducts] = useState(0);
 
     const sumar = () => {
         setCounter(counter + 1)
     }
     const restar = () => {
         setCounter(counter - 1)
-    }
-    const carrito = () => {
-        setProducts(products + counter)
     }
 
   return (
@@ -26,8 +22,7 @@ const Counter = () => {
             <button className={styles.btnCount} disabled={counter >= stock} onClick={sumar}>+</button>
         </div>
         <div className={styles.addCarrito}>
-            <button className={styles.btnCart}disabled={counter <= 0 || counter>stock} onClick={carrito}>Agregar al carrito</button>
-            <div>Productos en carrito: {products}</div>
+            <button className={styles.btnCart}disabled={counter <= 0 || counter>stock} onClick={() => (carrito(counter))}>Agregar al carrito</button>
             <Link to='/cart' className={styles.btnCart}>Ir al carrito</Link>
         </div>
     </div>

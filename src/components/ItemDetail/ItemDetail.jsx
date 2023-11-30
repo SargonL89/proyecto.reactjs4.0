@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './itemdetail.module.css'
 import Counter from '../Counter/Counter'
 
 const ItemDetail = ({card}) => {
 
+  const [products, setProducts] = useState(0);
+
+  const carrito = (cantidad) => {
+    setProducts(products + cantidad)
+  }
+  
   if (card.length === 0) {
     return <p>Cargando... </p>;
   }
@@ -17,7 +23,8 @@ const ItemDetail = ({card}) => {
             <ul className={styles.ulItDetail}>Modelo: {card[0].modelo}</ul>
             <ul className={styles.ulItDetail}>Memoria: {card[0].memoria}</ul>
             <ul className={styles.ulItDetail}>Precio: US$ {card[0].precio}</ul>
-            <Counter/>
+            <Counter carrito={carrito}/>
+            <div>Productos en carrito: {products}</div>
         </div>
         
     </div>
