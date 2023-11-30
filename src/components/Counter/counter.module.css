@@ -1,17 +1,6 @@
-/* .contenedor {
-    color: rgb(255, 255, 255);
-    background-color: rgb(110, 0, 213);
-    margin: 2%;
-    width: 200px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    box-shadow: 0px 20px 20px -8px rgba(0,0,0,0.80);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 0.4rem;
-} */
+.contenedor {
+    margin: 5%;
+}
 
 .counter {
     margin: 10px;
@@ -22,6 +11,7 @@
 
 .addCarrito {
     margin: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +31,7 @@
 }
 
 .btnCart {
+    margin: 4%;
     padding: 0px;
     width: 160px;
     height: 21px;
@@ -51,9 +42,11 @@
     cursor: pointer;
     border: 1px solid rgb(123, 128, 195);
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
 
-button:hover {
+.btnCart:hover {
     background-color: rgb(32, 0, 71);;
     color: rgb(255, 255, 255);
     box-shadow: 2px 3px 8px -1.5px rgba(0, 0, 0, 0.8);

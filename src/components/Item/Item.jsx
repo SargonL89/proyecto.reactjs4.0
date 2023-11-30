@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './item.module.css'
-import Counter from '../Counter/Counter'
 
 const Item = ({fabricante, marca, modelo, memoria, precio, img}) => {
 
@@ -13,7 +12,6 @@ const Item = ({fabricante, marca, modelo, memoria, precio, img}) => {
                 <ul className={styles.ulItem}>Modelo: {modelo}</ul>
                 <ul className={styles.ulItem}>Memoria: {memoria}</ul>
                 <ul className={styles.ulItem}>Precio: US$ {precio}</ul>
-                <Counter />
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styles from './counter.module.css'
+import { Link } from 'react-router-dom' 
 
 const Counter = () => {
     
@@ -27,6 +28,7 @@ const Counter = () => {
         <div className={styles.addCarrito}>
             <button className={styles.btnCart}disabled={counter <= 0 || counter>stock} onClick={carrito}>Agregar al carrito</button>
             <div>Productos en carrito: {products}</div>
+            <Link to='/cart' className={styles.btnCart}>Ir al carrito</Link>
         </div>
     </div>
   )

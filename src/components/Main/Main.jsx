@@ -3,6 +3,7 @@ import styles from './main.module.css';
 import ItemList from '../ItemList/ItemList';
 import ItemDetailContainer from '../ItemDetailConteiner/ItemDetailContainer';
 import { Routes, Route } from 'react-router-dom'
+import Form from '../Form/Form';
 
 const Main = () => {
   const [items, setItems] = useState([]);
@@ -28,6 +29,7 @@ const Main = () => {
       <Routes>
         <Route path='/' element={<ItemList items={items}/>} />
         <Route path='/detail/:idProd' element={<ItemDetailContainer items={items}/>} />
+        <Route path='/cart' element={<Form/>}/> 
       </Routes>
     </main>
   )

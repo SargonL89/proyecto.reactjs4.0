@@ -1,23 +1,25 @@
 import React from 'react'
+import styles from './itemdetail.module.css'
+import Counter from '../Counter/Counter'
 
 const ItemDetail = ({card}) => {
-
-  // console.log('in itemdetail: ', card)
 
   if (card.length === 0) {
     return <p>Cargando... </p>;
   }
 
   return (
-    <div>
-        <img src={card[0].img} alt="placa de video"/>
-        <div>
-            <ul>Fabricante: {card[0].fabricante}</ul>
-            <ul>Marca: {card[0].marca}</ul>
-            <ul>Modelo: {card[0].modelo}</ul>
-            <ul>Memoria: {card[0].memoria}</ul>
-            <ul>Precio: US$ {card[0].precio}</ul>
+    <div className={styles.divItDetail}>
+        <img src={card[0].img} alt="placa de video" className={styles.imgItDetail}/>
+        <div className={styles.details}>
+            <ul className={styles.ulItDetail}>Fabricante: {card[0].fabricante}</ul>
+            <ul className={styles.ulItDetail}>Marca: {card[0].marca}</ul>
+            <ul className={styles.ulItDetail}>Modelo: {card[0].modelo}</ul>
+            <ul className={styles.ulItDetail}>Memoria: {card[0].memoria}</ul>
+            <ul className={styles.ulItDetail}>Precio: US$ {card[0].precio}</ul>
+            <Counter/>
         </div>
+        
     </div>
   )
 }
